@@ -2,7 +2,6 @@ FROM ghcr.io/linuxserver/baseimage-alpine:3.18
 
 LABEL maintainer "Nicolas Coutin <ilshidur@gmail.com>"
 
-ARG DEBIAN_FRONTEND="noninteractive"
 ENV XDG_DATA_HOME="/config" \
 XDG_CONFIG_HOME="/config"
 ENV TZ America/Los_Angeles
