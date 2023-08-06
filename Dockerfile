@@ -4,7 +4,7 @@ LABEL maintainer "Nicolas Coutin <ilshidur@gmail.com>"
 
 ENV XDG_DATA_HOME="/config" \
     XDG_CONFIG_HOME="/config" \
-    TZ America/Los_Angeles
+    TZ="America/Los_Angeles"
 
 RUN apk --no-cache add bash tzdata tor=0.4.7.13-r2
 
