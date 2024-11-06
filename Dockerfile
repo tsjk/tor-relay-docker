@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.19
+FROM ghcr.io/linuxserver/baseimage-alpine:3.20
 
 LABEL maintainer "Nicolas Coutin <ilshidur@gmail.com>"
 
@@ -23,7 +23,8 @@ COPY torrc.relay.default /config/torrc.relay.default
 COPY torrc.exit.default /config/torrc.exit.default
 
 COPY entrypoint.sh /entrypoint.sh
-RUN chmod ugo+rx /entrypoint.sh
-
 COPY /root /
+
+RUN chmod ugo+rx /entrypoint.sh /etc/cont-init.d/30-config /etc/services.d/tor/run
+
 VOLUME /data
