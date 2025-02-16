@@ -1,1 +1,3 @@
 tor
+build-with-podman.sh
+push-with-podman.sh
