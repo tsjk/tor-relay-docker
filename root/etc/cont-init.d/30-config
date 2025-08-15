@@ -1,5 +1,5 @@
 #!/usr/bin/with-contenv bash
 
-chown -R abc:abc \
+chown -R ${PUID}:${PGID} \
 	/data \
 	/config
