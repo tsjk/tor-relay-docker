@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.23
+FROM ghcr.io/linuxserver/baseimage-alpine:3.24
 
 LABEL maintainer "Nicolas Coutin <ilshidur@gmail.com>"
 
